@@ -1,6 +1,7 @@
 /* Base styles for the body */
 body {
-    overflow-x: hidden;
+     overflow-x: hidden;
+     overflow-y: hidden;
     font-family: 'Open Sans', serif; /* Sets the font family for the body */
     padding-top: 54px; /* Adds padding to the top of the body */
     color: #0e1113; /* Sets the text color for the body */
