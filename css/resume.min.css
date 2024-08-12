@@ -1,0 +1,303 @@
+/* Base styles for the body */
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', serif; /* Sets the font family for the body */
+    padding-top: 54px; /* Adds padding to the top of the body */
+    color: #0e1113; /* Sets the text color for the body */
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', serif; /* Sets the font family for the body */
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC) repeat 0 0;
+    animation: bg-scrolling-reverse .92s infinite; /* IE 10+ */
+    -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse .92s infinite; /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse .92s infinite; /* Opera 12+ */
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    padding-top: 54px; /* Adds padding to the top of the body */
+}
+
+/* Override margin-top for the background animation */
+body.bg-animation {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Keyframes for scrolling animation */
+@-webkit-keyframes bg-scrolling-reverse {
+    100% { background-position: 50px 50px; }
+}
+@-moz-keyframes bg-scrolling-reverse {
+    100% { background-position: 50px 50px; }
+}
+@-o-keyframes bg-scrolling-reverse {
+    100% { background-position: 50px 50px; }
+}
+@keyframes bg-scrolling-reverse {
+    100% { background-position: 50px 50px; }
+}
+
+/* Media query for screens wider than 992px */
+@media (min-width: 992px) {
+    body {
+        padding-top: 0; /* Removes top padding on larger screens */
+        padding-left: 17rem; /* Adds left padding on larger screens */
+    }
+}
+
+ /* Media query for screens wider than 992px */
+  @media (min-width: 992px) {
+    body {
+      padding-top: 0; /* Removes top padding on larger screens */
+      padding-left: 17rem; /* Adds left padding on larger screens */
+    }
+  }
+  
+  /* Styles for all heading elements (h1 to h6) */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Saira Extra Condensed', serif; /* Sets the font family for headings */
+    font-weight: 700; /* Sets the font weight to bold */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    color: #343a40; /* Sets the text color for headings */
+  }
+  
+  h1 {
+    font-size: 6rem; /* Sets the font size for h1 */
+    line-height: 5.5rem; /* Sets the line height for h1 */
+  }
+  
+  h2 {
+    font-size: 3.5rem; /* Sets the font size for h2 */
+  }
+  
+  /* Styles for subheading elements */
+  .subheading {
+    text-transform: uppercase; /* Transforms text to uppercase */
+    font-weight: 500; /* Sets the font weight for subheadings */
+    font-family: 'Saira Extra Condensed', serif; /* Sets the font family for subheadings */
+    font-size: 1.35rem; /* Sets the font size for subheadings */
+  }
+  
+  /* Styles for social media icons */
+  .list-social-icons a {
+    color: #495057; /* Sets the color for social media links */
+  }
+  
+  .list-social-icons a:hover {
+    color: #bd5d38; /* Changes color on hover for social media links */
+  }
+  
+  .list-social-icons a .fa-lg {
+    font-size: 1.75rem; /* Sets the font size for large social media icons */
+  }
+  
+  /* Styles for general icon sizes */
+  .list-icons {
+    font-size: 3rem; /* Sets the font size for icons */
+  }
+  
+  .list-icons .list-inline-item i:hover {
+    color: #bd5d38; /* Changes icon color on hover */
+  }
+  
+  /* Styles for the side navigation */
+  #sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 750; /* Sets the font weight for nav links */
+    text-transform: uppercase; /* Transforms text to uppercase */
+  }
+  
+  /* Media query for screens wider than 992px */
+  @media (min-width: 992px) {
+    #sideNav {
+      text-align: center; /* Centers text in side navigation */
+      position: fixed; /* Fixes the position of side navigation */
+      top: 0; /* Aligns side navigation to the top */
+      left: 0; /* Aligns side navigation to the left */
+      display: flex; /* Uses flexbox for layout */
+      flex-direction: column; /* Arranges items in a column */
+      width: 17rem; /* Sets width for side navigation */
+      height: 100vh; /* Sets height to full viewport height */
+    }
+  
+    #sideNav .navbar-brand {
+      display: flex; /* Uses flexbox for navbar brand */
+      margin: auto auto 0; /* Centers navbar brand and aligns to top */
+      padding: .5rem; /* Adds padding around navbar brand */
+    }
+  
+    #sideNav .navbar-brand .img-profile {
+      max-width: 14rem; /* Sets maximum width for profile image */
+      max-height: 14rem; /* Sets maximum height for profile image */
+      border: 0.7rem solid rgba(255, 255, 255, .2); /* Adds border around profile image */
+    }
+  
+    #sideNav .navbar-collapse {
+      display: flex; /* Uses flexbox for navbar collapse */
+      align-items: flex-start; /* Aligns items to the start */
+      flex-grow: 0; /* Prevents flex items from growing */
+      width: 100%; /* Sets width to 100% */
+      margin-bottom: auto; /* Aligns collapse items to the top */
+    }
+  
+    #sideNav .navbar-collapse .navbar-nav {
+      flex-direction: column; /* Arranges nav items in a column */
+      width: 100%; /* Sets width to 100% */
+    }
+  
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+      display: block; /* Displays nav items as block elements */
+    }
+  
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+      display: block; /* Displays nav links as block elements */
+    }
+  }
+  
+  /* Styles for resume section */
+  section.resume-section {
+    border-bottom: 1px solid #dee2e6; /* Adds a bottom border to the resume section */
+    padding-top: 5rem !important; /* Adds top padding with higher priority */
+    padding-bottom: 5rem !important; /* Adds bottom padding with higher priority */
+  }
+  
+  /* Styles for resume date element */
+  section.resume-section .resume-item .resume-date {
+    min-width: none; /* Removes minimum width restriction */
+  }
+  
+  /* Media query for screens wider than 768px */
+  @media (min-width: 768px) {
+    section.resume-section {
+      min-height: 100vh; /* Sets minimum height to full viewport height */
+    }
+  
+    section.resume-section .resume-item .resume-date {
+      min-width: 18rem; /* Sets minimum width for resume date element */
+    }
+  }
+  
+  /* Media query for screens wider than 992px */
+  @media (min-width: 992px) {
+    section.resume-section {
+      padding-top: 3rem !important; /* Reduces top padding with higher priority */
+      padding-bottom: 3rem !important; /* Reduces bottom padding with higher priority */
+    }
+  }
+  
+  /* Styles for primary background color */
+  .bg-primary {
+    background-color: #bd5d38 !important; /* Sets background color with higher priority */
+  }
+  
+  /* Styles for primary text color */
+  .text-primary {
+    color: #bd5d38 !important; /* Sets text color with higher priority */
+  }
+  
+  /* Styles for links */
+  a {
+    color: #bd5d38; /* Sets the color for links */
+  }
+  
+  /* Styles for active, focused, and hovered links */
+  a:active, a:focus, a:hover {
+    color: #824027; /* Changes link color on active, focus, or hover */
+  }
+  
+  .container {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically (if container has height) */
+  }
+  
+  .credits {
+    text-align: center; /* Center text inside the credits div */
+  }
+  
+
+  /* Center the content in the resume section */
+
+
+  #resume {
+    text-align: left;
+    
+  }
+  
+  /* Style for the primary button */
+  .button-33 {
+    background-color: #bd5d38; /* Primary color */
+    border-radius: 100px; /* Fully rounded corners */
+    box-shadow: rgba(189, 93, 56, 0.2) 0 -25px 18px -14px inset, 
+                rgba(189, 93, 56, 0.15) 0 1px 2px, 
+                rgba(189, 93, 56, 0.15) 0 2px 4px, 
+                rgba(189, 93, 56, 0.15) 0 4px 8px, 
+                rgba(189, 93, 56, 0.15) 0 8px 16px, 
+                rgba(189, 93, 56, 0.15) 0 16px 32px;
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Inline block for the button */
+    font-family: 'Open Sans', sans-serif; /* Updated font family */
+    padding: 7px 20px; /* Padding for the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from text */
+    transition: all 250ms; /* Smooth transition for hover effect */
+    border: 0; /* Remove border */
+    font-size: 16px; /* Font size */
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Prevent text selection for Webkit browsers */
+    touch-action: manipulation; /* Ensure the button is tappable */
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(189, 93, 56, 0.35) 0 -25px 18px -14px inset, 
+                rgba(189, 93, 56, 0.25) 0 1px 2px, 
+                rgba(189, 93, 56, 0.25) 0 2px 4px, 
+                rgba(189, 93, 56, 0.25) 0 4px 8px, 
+                rgba(189, 93, 56, 0.25) 0 8px 16px, 
+                rgba(189, 93, 56, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg); /* Slight scale and rotation on hover */
+  }
+  /* Secondary Button */
+.button-33 {
+    background-color: #bd5d38; /* Primary color */
+    border-radius: 100px; /* Fully rounded corners */
+    box-shadow: rgba(189, 93, 56, 0.2) 0 -25px 18px -14px inset, 
+                rgba(189, 93, 56, 0.15) 0 1px 2px, 
+                rgba(189, 93, 56, 0.15) 0 2px 4px, 
+                rgba(189, 93, 56, 0.15) 0 4px 8px, 
+                rgba(189, 93, 56, 0.15) 0 8px 16px, 
+                rgba(189, 93, 56, 0.15) 0 16px 32px;
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Inline block for the button */
+    font-family: 'Open Sans', sans-serif; /* Updated font family */
+    padding: 7px 20px; /* Padding for the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from text */
+    transition: all 250ms; /* Smooth transition for hover effect */
+    border: 0; /* Remove border */
+    font-size: 16px; /* Font size */
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Prevent text selection for Webkit browsers */
+    touch-action: manipulation; /* Ensure the button is tappable */
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(189, 93, 56, 0.35) 0 -25px 18px -14px inset, 
+                rgba(189, 93, 56, 0.25) 0 1px 2px, 
+                rgba(189, 93, 56, 0.25) 0 2px 4px, 
+                rgba(189, 93, 56, 0.25) 0 4px 8px, 
+                rgba(189, 93, 56, 0.25) 0 8px 16px, 
+                rgba(189, 93, 56, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg); /* Slight scale and rotation on hover */
+  }
+  
+  
+ /* .text-center p {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    /* margin-bottom: 20px; /* Adjust the space below the text */
+   
